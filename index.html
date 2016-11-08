@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>百度舆情</title>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/yuqing.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script>
+	
+      $(function(){
+      	$("#window").fullpage({
+      		// sectionsColor:["#1bbc9b","#4BBFC3","#7BAABE","#f90"]
+      		navigation:true,
+      		navigationTooltips:["登录百度舆情","领先:数据收集与处理","全面:舆情分析逻辑与架构","专业:专业数据可视化"],
+      		afterLoad:function(anchorLink,index){
+                 // $(".content").find("$.zileft").addClass("act1")
+                 // alert(index)
+                 $(".content").removeClass("action");
+                 $(".content").eq(index-1).addClass("action");
+      		}
+
+      	})
+      	$(".an").click(function(){
+					$.fn.fullpage.moveSectionDown();
+				})
+      })
+    
+</script>
+</head>
+<body>
+    <div class="top">
+    	<div class="top-center">
+    		<div class="logo"></div>
+    	</div>
+    </div>
+	<div id="window">
+		<div class="section"><div class="yun"></div><div class="yun2"></div>
+		<div class="content">
+			<img src="./image/10.png" alt="" class="plane">
+			<img src="./image/19.png" alt="" class="zzi">
+			<img src="./image/33.png" alt="" class="lun">
+			<img src="./image/5.png" alt="" class="shan1">
+			<img src="./image/shan.png" alt="" class="shan2">
+			<img src="./image/shan2.png" alt="" class="shan3">
+			<img src="./image/2.png" alt="" class="an">
+			<div class="login">
+				<input type="text">
+				<input type="text">
+				<input type="text">
+			</div>
+		</div>
+		<div class="hai"></div>
+		</div>
+		<div class="section">
+			<div class="content">
+				<img src="./image/11.png" alt="" class="zileft">
+				<div class="ziright">
+					<h2>数据收集与处理</h2>
+                    <p>15年专业数据收集与语义分析技术积累</p>
+                    <p>卓越极致，不断攀登</p>
+				</div>
+				<img src="./image/7.png" alt="" class="shu">
+				<!-- <img src="./image/90.png" alt="" class="shuju"> -->
+                <div class="biggreen"></div>
+                <div class="sgreen1"></div>
+                <div class="sgreen2"></div>
+                <div class="sgreen3"></div>
+                <div class="sgreen4"></div>
+			    <img src="./image/2.png" alt="" class="an">
+
+			</div>
+		</div>
+		<div class="section">
+			<div class="content">
+				<img src="./image/12.png" alt="" class="zileft">
+				<div class="ziright">
+					<h2>舆情分析逻辑与架构</h2>
+                    <p>声量诊断、传播分析、情感提炼、受众画像</p>
+                    <p>有方法论，更有智慧</p>
+				</div>
+				<img src="./image/1.png" alt="" class="shu">
+				<!-- <img src="./image/90.png" alt="" class="shuju"> -->
+                <div class="bigblue1"></div>
+                <div class="bigblue2"></div>
+                <div class="bigblue3"></div>
+                <div class="bigblue4"></div>
+                <div class="bigblue5"></div>
+			    <img src="./image/2.png" alt="" class="an">
+
+			</div>
+        <div class="hai2"></div>
+		</div>
+		<div class="section">
+			<div class="content">
+				<img src="./image/134.png" alt="" class="zileft">
+				<div class="ziright">
+					<h2>专业数据可视化</h2>
+                    <p>非凡的数据洞悉和可视化能力</p>
+                    <p>精研数据，惊艳所见</p>
+				</div>
+				<img src="./image/90.png" alt="" class="shu">
+				<!-- <img src="./image/90.png" alt="" class="shuju"> -->
+				<img src="./image/8.png" alt="" class="yuan">
+                
+			</div>
+			<div class="copy">© 2014 Baidu使用百度前必读</div>
+		</div>
+	</div>
+</body>
+</html>
